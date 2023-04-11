@@ -1,5 +1,5 @@
 # text-decoder-js
-<h5>Challenge for best practices in JavaScript and practicing programming logic in the Oracle One course<h5>
+<h1>Desafio para as melhores práticas em JavaScript e prática de lógica de programação no curso Oracle One + Alura<h1>
 
 
 
