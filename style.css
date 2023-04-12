@@ -1,0 +1,19 @@
+.bg-light-blue{
+    background-color: #E5E5E5;
+}
+
+
+.btn-criptografar{
+    background-color: #0A3871;
+    height: 67px;
+    width: 328px;
+    left: 352px;
+    top: 0px;
+    border-radius: 24px;
+    padding: 24px;
+    border: none;
+}
+
+.btn-descriptografar{
+    background-color: #D8DFE8;
+}
