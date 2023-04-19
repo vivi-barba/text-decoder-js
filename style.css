@@ -3,11 +3,8 @@
 }
 
 .vector-logo{
-    position: absolute;
-    left: 36.67%;
-    right: 37.43%;
-    top: 0%;
-    bottom: 0%;
+    position: relative;
+    top: 20px;
 }
 
 .btn-criptografar{
@@ -36,22 +33,21 @@
 
 .box-shaddow{
     position: absolute;
-    width: 400px;
-    height: 944px;
+    width: 350px;
+    height: 525px;
     left: 1000px;
     top: 40px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
+    border-radius: 29px;
 }
 
 .input-position{
-    position: absolute;
+    position: relative;
     border: none;
     background-color: #E5E5E5;
     width: 680px;
     height: 350px;
     left: 240px;
-    top: 168px;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -96,3 +92,8 @@
     flex-grow: 0;
 }
 
+footer{
+    position: absolute;
+    right: 40em;
+    top: 30em;
+}
