@@ -2,18 +2,97 @@
     background-color: #E5E5E5;
 }
 
+.vector-logo{
+    position: absolute;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+}
 
 .btn-criptografar{
     background-color: #0A3871;
-    height: 67px;
-    width: 328px;
+    color: white;
+    height: 50px;
+    width: 270px;
     left: 352px;
     top: 0px;
-    border-radius: 24px;
-    padding: 24px;
+    border-radius: 20px;
     border: none;
+    text-align: center;
 }
 
 .btn-descriptografar{
     background-color: #D8DFE8;
+    color: #0A3871;
+    height: 50px;
+    width: 270px;
+    left: 352px;
+    top: 0px;
+    border-radius: 20px;
+    border: 1px solid #0A3871;
+    
 }
+
+.box-shaddow{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.input-position{
+    position: absolute;
+    border: none;
+    background-color: #E5E5E5;
+    width: 680px;
+    height: 350px;
+    left: 240px;
+    top: 168px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    /*retiranto resize do texterea*/
+    resize: none;
+
+}
+
+.input-position:focus{
+    outline: none;
+}
+
+.massage-not-found{
+    width: 336px;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.enter-text{
+    width: 336px;
+    height: 48px;    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
