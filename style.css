@@ -6,6 +6,10 @@
     width: 30px;
 }
 
+.icon:hover{
+    width: 40px;
+}
+
 .rotate-logo {
     display: inline-block;
     position: relative;
@@ -125,10 +129,10 @@
 
 footer{
     padding: 15px;
-        width: 100%;
-        text-align: center;
-        height: 50px;
-        margin: auto;
-        bottom: 0;
-        position: fixed;
+    width: 100%;
+    text-align: center;
+    height: 5em;
+    margin: auto;
+    bottom: 0;
+    position: fixed;
 }
