@@ -2,6 +2,34 @@
     background-color: #E5E5E5;
 }
 
+.icon {
+    width: 30px;
+}
+
+.rotate-logo {
+    display: inline-block;
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rotate-logo img {
+    display: block;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
 .btn-criptografar{
     background-color: #0A3871;
     color: white;
@@ -87,31 +115,20 @@
     flex-grow: 0;
 }
 
-
-.icon{
-    width: 30px;
+.left-position{
+    left: 5rem;
 }
 
- .rotate-logo {
-     display: inline-block;
-     position: relative;
-     font-size: 50px;
-     font-weight: bold;
-     font-family: Arial, Helvetica, sans-serif;
- }
+.bg-footer-blue{
+    background-color: ;
+}
 
- .rotate-logo img {
-     display: block;
-     position: absolute;
-     animation: rotate 2s linear infinite;
- }
-
-  @keyframes rotate {
-      0% {
-          transform: rotateY(0deg);
-      }
-
-      100% {
-          transform: rotateY(360deg);
-      }
-  }
+footer{
+    padding: 15px;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        margin: auto;
+        bottom: 0;
+        position: fixed;
+}

@@ -15,36 +15,37 @@
     <header class="rotate-logo">
          <img src="assets/logos/Logo.svg">
     </header>
-    <section>
-        <div>
-            <textarea autofocus name="criptografar" class="input-position" id="textCriptografar" placeholder="Digite seu texto" required></textarea>
-        </div>
-        <div class="d-flex justify-content-end">
-            <div class="bg-white box-shaddow">
-                <span id="result"></span>
-                <img id="img-right" src="assets/vector-right-side.png">
-                <div>
-                    <h4 class="massage-not-found">Nenhuma mensagem encontrada</h4>
-                    <h6 class="enter-text">Digite um texto que você deseja criptografar ou descriptografar.</h6>
+    <main>
+        <section>
+            <div>
+                <textarea autofocus name="criptografar" class="input-position" id="textCriptografar" placeholder="Digite seu texto" required></textarea>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="bg-white box-shaddow">
+                    <span id="result"></span>
+                    <img id="img-right" src="assets/vector-right-side.png">
+                    <div>
+                        <h4 class="massage-not-found">Nenhuma mensagem encontrada</h4>
+                        <h6 class="enter-text">Digite um texto que você deseja criptografar ou descriptografar.</h6>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <img src="assets/icon/icon-info-footer.svg">
-            <label>Apenas letras minúsculas e sem acento.</label>
-            <button onclick="buttonCriptografar" class="btn-criptografar" alt="Clique aqui para Criptografar seu texto">Criptografar</button>
-            <button onclick="buttonDescriptografar" class="btn-descriptografar">Descriptografar</button>
-        </div>
-    </section>
-    <footer class="blockquote-footer">
-        
-<div>
-            <a><img class="icon" src="assets/icon/github (1).png" alt="github"></a>
-            <a><img class="icon" src="assets/icon/codepen.png" alt="codepen"></a>
-            <a><img class="icon" src="assets/icon/logotipo-do-linkedin.png" alt="Linkedin"></a>
-        </div>    
-    </footer>
+        </section>
+        <section class="position-relative left-position">
+            <div class="">
+                <img src="assets/icon/icon-info-footer.svg">
+                <label>Apenas letras minúsculas e sem acento.</label>
+            </div>
+            <div>
+                <button type="submit" onclick="buttonCriptografar" class="btn-criptografar" alt="Clique aqui para Criptografar seu texto">Criptografar</button>
+                <button type="submit" onclick="buttonDescriptografar" class="btn-descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <footer class="bg-footer-blue">
+                <a href="https://github.com/vivi-barba" target="_blank"><img class="icon" src="assets/icon/github (1).png" alt="github"></a>
+                <a href="https://codepen.io/Vic-Barbosa" target="_blank"><img class="icon" src="assets/icon/codepen.png" alt="codepen"></a>
+                <a href="https://www.linkedin.com/in/victoriabarbosa-dev/" target="_blank"><img class="icon" src="assets/icon/logotipo-do-linkedin.png" alt="Linkedin"></a>
+        </footer>
+    </main>
 </body>
 </html>
