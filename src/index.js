@@ -1,49 +1,55 @@
-
-//Variaveis pegando a entrada inserida para ser criptografada e descriptografada
 const textCriptografar = document.getElementById("textCriptografar");
 const buttonCriptografar = document.getElementById("buttonCriptografar");
 const buttonDescriptografar = document.getElementById("buttonDescriptografar");
+const resultado = document.getElementById("resultado");
+const divToHide = document.querySelector(".image-display");
 
-function criptografar(textCriptografar) {
-  let tetx
-  if (textCriptografar === e) {
+//funçao para criptografia
+function criptografar(texto) {
+  let textoCriptografado = texto
+    .replace(/e/g, "enter")
+    .replace(/i/g, "imes")
+    .replace(/a/g, "ai")
+    .replace(/o/g, "ober")
+    .replace(/u/g, "ufat");
+  return textoCriptografado;
+}
+
+//funçao de descriptografia
+function descriptografar(texto) {
+  let textoDescriptografado = texto
+    .replace(/enter/g, "e")
+    .replace(/imes/g, "i")
+    .replace(/ai/g, "a")
+    .replace(/ober/g, "o")
+    .replace(/ufat/g, "u");
+  return textoDescriptografado;
+}
+
+//botao de criptografar
+buttonCriptografar.addEventListener("click", () => {
+  const texto = textCriptografar.value;
+
+//verificando se o campo de texto nao esta vazio
+  if (texto.trim() !== "") {
+    const textoCriptografado = criptografar(texto);
+    //atualizando a div com o resultado
+    resultado.textContent = `Texto Criptografado: ${textoCriptografado}`;
+    //propriedades de estilo para o resultado
+    resultado.style.textAlign = "center";
+    resultado.style.fontSize = "1.2rem";
+    resultado.style.color = "#0A3871";
+    resultado.style.backgroundColor = "#F1F1F1";
+    resultado.style.boxShadow = "0 2px 8px rgba(0, 0, 0, 0.1)";
+    //escondendo a div de 'mensagem não encontrada'
+    divToHide.style.display = "none";
   }
-}
+});
 
-// Recurso de Consulta
 
-/*A letra "e" é convertida para "enter"
-A letra "i" é convertida para "imes"
-A letra "a" é convertida para "ai"
-A letra "o" é convertida para "ober"
-A letra "u" é convertida para "ufat"
-
-// Recurso de ajuda
-/*
-function criptografar(texto, chave) {
-  let criptografado = "";
-  for (let index = 0; index < texto.length; index++) {
-    let letra = texto[index];
-    if (letra.match(/[a-z]/i)) {
-      let codigo = texto.charCodeAt(index);
-      if (codigo >= 65 && codigo <= 90) {
-        letra = String.fromCharCode(((codigo - 65 + chave) % 26) + 65);
-      } else if (codigo >= 97 && codigo <= 122) {
-        letra = String.fromCharCode(((codigo - 97 + chave) % 26) + 97);
-      }
-    }
-    criptografado += letralll;
-  }
-  return criptografado;
-}
-
-function descriptografar(texto, chave) {
-  return criptografar(texto, 26 - chave);
-}
-
-let textoOriginal = "exemplo de texto para criptografar";
-let textoCriptografado = criptografar(textoOriginal, 3);
-console.log(textoCriptografado);
-
-let textoDescriptografado = descriptografar(textoCriptografado, 3);
-console.log(textoDescriptografado);
+//botão de descriptografar
+buttonDescriptografar.addEventListener("click", () => {
+  const texto = textCriptografar.value;
+  const textoDescriptografado = descriptografar(texto);
+  resultado.textContent = `Texto Descriptografado: ${textoDescriptografado}`;
+});
